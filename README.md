@@ -13,3 +13,7 @@ Modify the following lines with your own values to be able to test the wrapper:
     sendToAddress('SOMEUSERNAME', 'SOMEADDRESS', 1);
     getUserBalance('SOMEUSERNAME');
     getUserInfo('SOMEUSERNAME');
+```
+###Required packages
+
+https://www.npmjs.org/package/restler
