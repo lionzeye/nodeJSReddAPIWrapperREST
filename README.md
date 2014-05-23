@@ -3,7 +3,7 @@ nodeJSReddAPIWrapperREST
 
 use nodeJS to GET and POST data from/to the ReddAPI using REST
 
-Modify the following lines with your own values to be able test the wrapper:
+Modify the following lines with your own values to be able to test the wrapper:
 ```js
     var apiKeyGET = 'YOURKEY';
     var apiKeyPOST = 'YOURKEY';
