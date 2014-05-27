@@ -12,6 +12,7 @@ Modify the following lines with your own values to be able to test the wrapper:
     moveToUser('SOMEUSERNAME', 'SOMEUSERNAME', 1);
     sendToAddress('SOMEUSERNAME', 'SOMEADDRESS', 1);
     getUserBalance('SOMEUSERNAME');
+    getUserBalanceDetail('SOMEUSERNAME');
     getUserInfo('SOMEUSERNAME');
     getUserList();
 ```
