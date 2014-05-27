@@ -36,6 +36,12 @@ var command = 'GetUserBalance';
 requestGET(baseURL + command + '/' + apiKeyGET + '/' + userName, getUserBalanceCallback);
 };
 
+var getUserBalanceDetail = function(userName) {
+var command = 'GetUserBalanceDetail';
+requestGET(baseURL + command + '/' + apiKeyGET + '/' + userName, getUserBalanceDetailCallback);
+};
+
+
 var getUserInfo = function(userName) {
 var command = 'GetUserInfo';
 requestGET(baseURL + command + '/' + apiKeyGET + '/' + userName, getUserInfoCallback);
@@ -87,6 +93,13 @@ var getUserBalanceCallback = function(data) {
   console.log(data);
 };
 
+var getUserBalanceDetailCallback = function(data) {
+  // DO SOMETHING WITH THE DATA IN HERE
+  console.log('---USER-BALANCE-DETAIL---');
+  console.log(data);
+};
+
+
 var getUserInfoCallback = function(data) {
   // DO SOMETHING WITH THE DATA IN HERE
   console.log('---USER-INFO------');
@@ -123,5 +136,6 @@ createNewUser('SOMEUSERNAME');
 moveToUser('SOMEUSERNAME', 'SOMEUSERNAME', 1);
 sendToAddress('SOMEUSERNAME', 'SOMEADDRESS', 1);
 getUserBalance('SOMEUSERNAME');
+getUserBalanceDetail('SOMEUSERNAME');
 getUserInfo('SOMEUSERNAME');
 getUserList();
